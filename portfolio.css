@@ -45,12 +45,24 @@
  padding: 10px;
  margin-right: 90px;
  border: none;
+ background-color: transparent;
  border-radius: 3px;
+ width: 100%;
+ color: aliceblue;
+ outline: none;
 
 }
-
+input::placeholder {
+    color: aliceblue;
+  }
 .search{
      position: relative;
+     background-color: #484848;
+     margin-right: 100px;
+     color: aliceblue;
+     width: 17%;
+     padding-left: 23px;
+     border-radius: 9px;
      /* top: 10px; */
 
 }
@@ -58,7 +70,7 @@
     position: absolute;
     display: inline-block;
     top: 9px;
-    left: 4px;
+    left: 9px;
 }
 
 
@@ -96,18 +108,31 @@
     padding: 5px 15px;
     margin-left: 15px;
     border-radius: 8px;
+    color: aliceblue;
     border-color:  #0948b4;
+    background-color: #0948b4;
     font-weight: bold;
+}
+.intro a{
+    /* display: inline-block; */
+    padding: 9px 20px;
+    border: 2px solid #0948b4;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1d1d1d;
 
 }
+/* .intro a:hover{
 
+    box-shadow: 0px 0px 15px rgba(106, 101, 101, 0.3);
+
+
+}
 .intro button:hover{
 
-    border-color:  #0948b4;
-    color: aliceblue;
-    background-color: #0948b4;
-
-}
+    box-shadow: 0px 0px 15px rgba(106, 101, 101, 0.3);
+} */
 .intro-sticker{
     display: flex;
 }
@@ -117,8 +142,8 @@
     position: absolute;
     right: 15px;
     bottom: 115px;
-    
-    filter: drop-shadow(0px 0px 15px  rgba(0, 0, 0, 0.5));
+    /* filter: grayscale(100%); */
+    filter: drop-shadow(0px 0px 15px  rgba(0, 0, 0, 0.5)) grayscale(100%);
     /* z-index:2; */
     
 }
@@ -226,8 +251,28 @@
 }
 .project-templates{
     display: flex;
+    overflow-x: scroll;
+    
+    position: relative;
     
 }
+.scroll-icons{
+    /* position: absolute; */
+    /* display: inline-block; */
+    text-align: center;
+}
+.scroll-icons i{
+    font-size: 30px;
+    letter-spacing: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    padding-left: 10px;
+    height: 60px;
+    cursor: pointer;
+    /* padding-right: 0px; */
+}
+
 .project-templates .template-shadow{
     margin: 30px;
     padding: 20px ;
@@ -375,5 +420,11 @@ footer img{
     position: absolute;
     top: -165px;
     left: 560px;
+    filter:grayscale(100%) ;
     
+}
+
+.button-hover:hover{
+    box-shadow: 0px 0px 15px rgba(106, 101, 101, 0.3);
+
 }
